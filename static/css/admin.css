@@ -1,0 +1,322 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #eaf6ff, #dbefff);
+    color: #333;
+    line-height: 1.7;
+    padding: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    font-weight: 700;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Admin Dashboard Layout */
+.admin-container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    background: linear-gradient(135deg, #eef7fd, #ddeaf8);
+    overflow: hidden;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 280px;
+    background: linear-gradient(145deg, #2c3e50, #34495e);
+    color: #ecf0f1;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 3px 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar .admin-header {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sidebar a {
+    color: #ecf0f1;
+    padding: 14px 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateX(8px);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar a.active {
+    background: #1abc9c;
+    font-weight: 600;
+}
+
+.sidebar .admin-footer {
+    text-align: center;
+    font-size: 12px;
+    color: #bdc3c7;
+    margin-top: 20px;
+}
+
+/* Main Content Styles */
+.main-content {
+    flex-grow: 1;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    margin-left: 290px;
+    overflow-y: auto;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Header Styles */
+.header {
+    background: #ffffff;
+    padding: 20px 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.header h1 {
+    font-size: 28px;
+    color: #34495e;
+}
+
+.header .logout-btn {
+    background: linear-gradient(145deg, #e74c3c, #c0392b);
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.3s ease, transform 0.2s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.header .logout-btn:hover {
+    background: #e74c3c;
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+th, td {
+    padding: 16px;
+    text-align: left;
+    font-size: 15px;
+}
+
+th {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+td {
+    background: #f9f9f9;
+}
+
+tr:nth-child(even) td {
+    background: #f1f1f1;
+}
+
+tr:hover td {
+    background: #eaf3fb;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+/* Button Styles */
+.button {
+    padding: 14px 25px;
+    background: linear-gradient(145deg, #3498db, #2980b9);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background: #3498db;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.button:active {
+    transform: translateY(1px);
+}
+
+/* Form Styles */
+form {
+    margin-top: 30px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form select,
+form button {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+    background: #ecf0f1;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+form button {
+    background: linear-gradient(145deg, #3498db, #2980b9);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #2980b9;
+}
+
+/* Alerts and Notifications */
+.alert {
+    padding: 15px;
+    margin-bottom: 25px;
+    background: #f2f7fa;
+    border-left: 5px solid #3498db;
+    color: #333;
+    border-radius: 8px;
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.alert.success {
+    border-left-color: #2ecc71;
+}
+
+.alert.error {
+    border-left-color: #e74c3c;
+}
+
+.alert.info {
+    border-left-color: #3498db;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .admin-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 20px;
+        box-shadow: none;
+    }
+
+    .sidebar .admin-header {
+        font-size: 24px;
+    }
+
+    .main-content {
+        padding: 20px;
+        margin-left: 0;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header .logout-btn {
+        margin-top: 10px;
+    }
+}

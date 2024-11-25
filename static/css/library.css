@@ -1,0 +1,416 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+  
+  li {
+    list-style-type: none;
+    text-transform: capitalize;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'poppins';
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: var(black);
+  }
+  
+  p {
+    color: var(black);
+  }
+  
+  body {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  
+  /* Header Section */
+  header {
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #181a1b;
+  }
+  
+  header .nav {
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .nav .logo {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: oblique;
+    color: white;
+  }
+  
+  .nav nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .nav nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+  }
+  
+  .nav .nav-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Cart badge styling */
+  .cart-link {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .cart-badge {
+    position: absolute;
+    top: -5px; /* Move it slightly upward */
+    right: -25px; /* Move it slightly to the right */
+    color: white;
+    border-radius: 50%;
+    padding: 4px 7px;
+    font-size: 12px;
+    min-width: 20px;
+    text-align: center;
+    z-index: 1; /* Ensure the badge appears above other elements */
+  }
+  
+  /* Optional: Adjust the cart icon styling */
+  .fa-cart-shopping {
+    font-size: 24px; /* Increase size if needed */
+    color: white; /* Make sure the color contrasts with the background */
+  }
+  
+  header .burger_icon {
+    display: none;
+  }
+  
+  .checkout-section {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    width: 100%;
+    gap: 40px;
+  }
+
+.cart-main {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 20px;
+}
+
+.heading-one {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sub-heading {
+    font-size: 1rem;
+    color: #a5a5a5;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Wrapper to hold left and right sections side by side */
+.cart-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: -100px;
+}
+
+/* Left section - Cart items */
+.cart-item {
+    display: flex;
+    align-items: start;
+    justify-content: start; /* Align items to the start */
+    background-color: #242f3d; /* Dark background for each item */
+    padding: 40px; /* Increased padding for larger appearance */
+    border-radius: 20px;
+    margin-left: -150px;
+    margin-bottom: 30px; /* Space between items */
+    gap: 30px; /* Increased space between image and details */
+    width: 700px; /* Set a larger maximum width */
+}
+
+/* Style for the cart item image */
+.cart-item img {
+    width: 250px; /* Increased image width for larger display */
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+/* Details section within each cart item */
+.cart-item-details {
+    flex: 1;
+}
+
+/* Title of the game */
+.cart-item-details h3 {
+    font-size: 1.4rem; /* Slightly larger font size */
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* Price of the game */
+.cart-item-details p {
+    font-size: 1.2rem; /* Larger font size for price */
+    color: white; /* Blue color for price */
+}
+
+/* Remove button style */
+.remove-btn {
+    color: white;
+    border: none;
+    background: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Align each item properly and add a border if desired */
+.cart-items-container .cart-item:not(:last-child) {
+    border-bottom: none;
+    padding-bottom: 10px;
+}
+
+/* Summary section on the right */
+.cart-summary {
+    background-color: #242f3d; /* Dark background for summary */
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 300px; /* Set max-width for summary */
+    margin-left: 30px; /* Space between left and right sections */
+}
+
+/* Total container styling */
+.total-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Total label and amount */
+.total-label {
+    font-size: 1.2rem;
+    color: #a5a5a5;
+}
+
+.total-amount {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Continue and Remove All buttons */
+.cart-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Styles for the increase and decrease buttons */
+.increase-quantity,
+.decrease-quantity {
+    background-color: white; /* Set a blue background color */
+    color: black; /* White text color */
+    border: none;
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 5px;
+}
+
+.increase-quantity:hover,
+.decrease-quantity:hover {
+    background-color: black; /* Darker blue on hover */
+    color: white;
+}
+
+/* Bottom Action Buttons Container */
+.cart-actions-bottom {
+    display: flex;
+    justify-content: space-between; /* Space out the buttons */
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px; /* Set a max-width for a more compact look */
+    margin-left: -90px; /* Center the container horizontally */
+}
+
+/* Button Styling */
+.btn-continue,
+.btn-remove {
+    flex: 1; /* Make buttons expand to equal width */
+    margin: 0 10px; /* Space between buttons */
+    padding: 12px 0; /* More padding for height */
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+/* Continue Shopping Button */
+.btn-continue {
+    background-color: white;
+    color: black
+}
+
+.btn-continue:hover {
+    background-color: black;
+    color: white; /* Slightly lighter on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Remove All Items Button */
+.btn-remove {
+    background-color: white;
+    color: black;
+}
+
+.btn-remove:hover {
+    background-color: black;
+    color: white;
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.cart-summary {
+    background-color: #242f3d;
+    padding: 10px 20px; /* Mengurangkan padding agar lebih kecil */
+    border-radius: 8px;
+    width: 500px; /* Ubah lebar container di sini */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Jarak antara elemen dalam container */
+    position: fixed;
+    right: 200px; /* Aligns the container to the right */
+    top: 220px; /* Adjusts the vertical position */
+}
+
+.total-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.total-label {
+    color: #a5a5a5;
+    font-weight: bold;
+}
+
+.total-amount {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.btn-checkout {
+    border: none;
+  outline: none;
+  color: black;
+  background-color: white;
+  border-radius: 8px; /* Slightly rounded corners */
+  padding: 12px 20px; /* Increase padding for a more substantial feel */
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  transition: all 0.3s ease, transform 0.2s ease;
+}
+
+.btn-checkout:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.05); /* Slight scale effect on hover */
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3); /* More shadow on hover */
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: black;
+  border: 1px solid white;
+}
+::-webkit-scrollbar-track {
+  background-color: white;
+  border: 5px solid white;
+}
+::-webkit-scrollbar-button {
+  background-color: white;
+  background-repeat: no-repeat;   
+  background-size: 100%;
+  background-position: center;
+ }
+::-webkit-scrollbar-button:decrement {
+  background-image: url("/img/logo2.png");   
+ }
+::-webkit-scrollbar-button:increment {
+  background-image: url("/img/logo2.png"); 
+}
+
+.cart-item .item-details input[type="checkbox"] {
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}

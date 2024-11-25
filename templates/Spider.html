@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/img/logo.png" />
+    <script src="/carousel.js" defer></script>
+    <script src="/index.js" defer></script>
+    <link rel="stylesheet" href="/static/css/product.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Miles Morales | Marketplace Game</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="nav">
+            <a href="index.html" class="logo">Marketplace Game</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#arrival">Top Sale</a></li>
+                    <li><a href="#best-collection">Best Collection</a></li>
+                    <li><a href="library.html">Library</a></li>
+                </ul>
+                <div class="nav-icon">
+                    <a href="cart.html" class="cart-link">
+                        <span><i class="fa-solid fa-cart-shopping"></i></span>
+                        <span id="cartBadge" class="cart-badge">0</span>
+                    </a>
+                </div>
+            </nav>
+            <i class="fa-solid fa-bars burger_icon"></i>
+        </div>
+    </header>
+
+    <!-- Main Section for Miles Morales -->
+    <main class="checkout-section">
+        <div class="wrapper">
+            <!-- Left Section (Game Details) -->
+            <div class="left-section">
+                <h1>Miles Morales</h1>
+                <div class="game-rating">
+                    <span class="rating-star">★★★☆</span>
+                    <span>4.5</span>
+                </div>
+
+                <!-- Tab Menu -->
+                <div class="tab-menu">
+                    <a href="#" class="active">Overview</a>
+                </div>
+
+                <!-- Main Display for Selected Image or Video -->
+                <div class="media-display" id="mainDisplay">
+                    <video id="carouselVideo" controls autoplay style="display:none;"></video>
+                    <img id="carouselImage" src="/static/photo/Spider.jpg" alt="Miles Morales">
+                </div>
+
+                <!-- Carousel for Additional Images and Video -->
+                <div class="carousel">
+                    <button class="carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                    <div class="carousel-images">
+                        <!-- Video Thumbnail -->
+                        <div class="thumbnail" data-type="video" data-src="/static/video/spider.webm">
+                            <img src="/static/photo/spider thumbnail.jpg" alt="Miles Morales Thumbnail">
+                            <i class="fa fa-play play-icon"></i>
+                        </div>
+                        <!-- Image Thumbnails -->
+                        <div class="thumbnail" data-type="image" data-src="/static/photo/spider1.jpg">
+                            <img src="/static/photo/spider1.jpg" alt="Screenshot 1">
+                        </div>
+                        <div class="thumbnail" data-type="image" data-src="/static/photo/spider2.jpg">
+                            <img src="/static/photo/spider2.jpg" alt="Screenshot 2">
+                        </div>
+                        <div class="thumbnail" data-type="image" data-src="/static/photo/spider3.jpg">
+                            <img src="/static/photo/spider3.jpg" alt="Screenshot 3">
+                        </div>
+                        <div class="thumbnail" data-type="image" data-src="/static/photo/spider4.jpg">
+                            <img src="/static/photo/spider4.jpg" alt="Screenshot 3">
+                        </div>
+                    </div>
+                    <button class="carousel-next"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+
+                <!-- Product Information Section -->
+                <section class="product-info">
+                    <div>
+                        Swing through the vibrant streets of New York City as Miles Morales. Embrace his rise as a new Spider-Man while uncovering a complex narrative that balances friendship, family, and the duty of a superhero.
+                    </div>
+                    <div class="d-flex gap-md my-sm">
+                        <span>
+                            <div class="text-dark-light">Genres</div>
+                            <a href="">Action</a> <a href="">Adventure</a>
+                            <a href="">Superhero</a>
+                        </span>
+                        <span>
+                            <div class="text-dark-light">Features</div>
+                            <a href="">Single Player</a> <a href="">Open World</a>
+                        </span>
+                    </div>
+                    <div class="product-heading">Miles Morales</div>
+                    <div class="product-description">
+                        Experience the thrill of being a superhero with stunning visuals and immersive gameplay. Harness unique bio-electric venom attacks and cloaking abilities while combating enemies in an ever-evolving cityscape. Miles Morales showcases a heartwarming yet action-packed journey of growth and heroism.
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Section (Purchase Details) -->
+            <div class="right-section">
+                <div class="col">
+                    <div class="game-info">
+                        <img src="/static/photo/Spider.jpg" alt="Game Logo" class="game-logo">
+                        <h2 class="heading-three">Miles Morales</h2>
+                        <div class="price-container">
+                            <span class="show-price">RM 209</span>
+                        </div>
+                        <button class="show-btn btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Details List in Right Section -->
+                <div class="game-details">
+                    <div class="detail-item">
+                        <span class="detail-title">Rewards</span>
+                        <span class="detail-value">Discount (20%) <i class="fa fa-info-circle"></i></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Refund Type</span>
+                        <span class="detail-value">Refundable <i class="fa fa-question-circle"></i></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Developer</span>
+                        <span class="detail-value">Insomniac Games</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Publisher</span>
+                        <span class="detail-value">Sony Interactive Entertainment</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Release Date</span>
+                        <span class="detail-value">18 Nov, 2022</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Platform</span>
+                        <span class="detail-value">Windows</span>
+                    </div>
+                </div>
+
+                <!-- New Specifications Section -->
+                <div class="specifications">
+                    <h3>Recommended</h3>
+                    <div class="spec-item">
+                        <span class="spec-title">OS:</span>
+                        <span class="spec-value">Windows 10</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-title">Processor:</span>
+                        <span class="spec-value">Intel Core i7-9700 or AMD Ryzen 7 3700X</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-title">Memory:</span>
+                        <span class="spec-value">16 GB</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-title">Storage:</span>
+                        <span class="spec-value">75 GB</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-title">Graphics:</span>
+                        <span class="spec-value">NVIDIA GeForce RTX 2060 or AMD RX 5700</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

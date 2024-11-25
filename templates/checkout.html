@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/img/logo.png" />
+    <script src="/cart.js" defer></script>
+    <script src="/checkout.js" defer></script>
+    <script src="/index.js" defer></script>
+    <link rel="stylesheet" href="/static/css/checkout.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Cart | Vapour</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="nav">
+            <a href="index.html" class="logo">Marketplace Game</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#arrival">Top Sale</a></li>
+                    <li><a href="#best-collection">Best Collection</a></li>
+                    <li><a href="library.html">Library</a></li>
+                </ul>
+                <div class="nav-icon">
+                    <a href="cart.html" class="cart-link">
+                        <span><i class="fa-solid fa-cart-shopping"></i></span>
+                        <span id="cartBadge" class="cart-badge">0</span>
+                    </a>
+                </div>
+            </nav>
+            <i class="fa-solid fa-bars burger_icon"></i>
+        </div>
+    </header>
+
+    <!-- Checkout Section -->
+    <div class="checkout-section">
+        <div class="checkout-wrapper">
+            <h2 class="heading">Checkout</h2>
+            <div class="grid-container">
+                <!-- Payment Method Section -->
+                <div class="payment-method">
+                    <h3>Choose your payment method</h3>
+                    <div class="payment-options">
+                        <div class="option">
+                            <input type="radio" id="visa" name="payment" checked>
+                            <label for="card">
+                                <img src="https://readymadeui.com/images/visa.webp" alt="Visa">
+                            </label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" id="paypal" name="payment">
+                            <label for="paypal">
+                                <img src="https://readymadeui.com/images/paypal.webp" alt="PayPal">
+                            </label>
+                        </div>
+                    </div>
+                    <form id ="paymentForm">
+                        <div class="form-row">
+                            <input type="text" placeholder="Name of card holder">
+                            <input type="text" placeholder="Postal code">
+                        </div>
+                        <div class="form-row">
+                            <input type="text" placeholder="Card number">
+                        </div>
+                        <div class="form-row">
+                            <input type="text" placeholder="EXP.">
+                            <input type="text" placeholder="CVV">
+                        </div>
+                        <div class="form-actions">
+                            <button type="button" class="btn-later">Pay Later</button>
+                            <button type="submit" class="btn-submit">Complete Purchase</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Summary Section -->
+                <div class="checkout-summary">
+                    <h3>Summary</h3>
+                    <ul class="text-gray-800 mt-6 space-y-3">
+                        <li class="flex flex-wrap gap-4 text-sm">Sub total <span class="amount subtotal">RM 0.00</span>
+                        </li>
+                        <li class="flex flex-wrap gap-4 text-sm">Discount (20%) <span class="amount discount">RM
+                                0.00</span></li>
+                        <hr />
+                        <li class="flex flex-wrap gap-4 text-base font-bold">Total <span class="amount total">RM
+                                0.00</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Receipt Section -->
+    <div id="receiptSection" style="display: none; margin-top: 30px; text-align: center;">
+        <h2>Thank You for Your Purchase!</h2>
+        <p id="receiptDetails"></p>
+        <button onclick="window.location.href='index.html';" class="btn">Return to Homepage</button>
+    </div>
+</body>
+
+</html>

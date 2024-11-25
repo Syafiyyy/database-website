@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/img/logo.png" />
+    <script src="/library.js" defer></script>
+    <link rel="stylesheet" href="/static/css/library.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Cart | Vapour</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="nav">
+            <a href="index.html" class="logo">Marketplace Game</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#arrival">Top Sale</a></li>
+                    <li><a href="#best-collection">Best Collection</a></li>
+                    <li><a href="library.html">Library</a></li>
+                </ul>
+                <div class="nav-icon">
+                    <a href="cart.html" class="cart-link">
+                        <span><i class="fa-solid fa-cart-shopping"></i></span>
+                        <span id="cartBadge" class="cart-badge">0</span>
+                    </a>
+                </div>
+            </nav>
+            <i class="fa-solid fa-bars burger_icon"></i>
+        </div>
+    </header>
+
+    <!-- Main Cart Section -->
+    <main class="cart-main">
+        <h1 class="heading-one">Your Library</h1>
+        <p class="sub-heading">Your purchase game will appear here.</p>
+
+        <!-- Wrapper for Left and Right Sections -->
+        <div class="cart-content-wrapper">
+            <!-- Cart Items Container (Left Section) -->
+            <div id="cartContainer" class="cart-items-container">
+                <!-- Cart items will be dynamically rendered here by cart.js -->
+            </div>
+        </div>
+
+        <!-- Separate Action Buttons at the Bottom -->
+        <div class="cart-actions-bottom">
+            <button id="continueShoppingButton" class="btn-continue">Download</button>
+
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,521 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins';
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: 'poppins';
+}
+h1, h2, h3, h4, h5, h6 {
+  color: var(black);
+}
+
+p {
+  color: var(black);
+}
+
+body {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* Header Section */
+header {
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #181a1b;
+}
+
+header .nav {
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .nav .logo {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: oblique;
+  color: white;
+}
+
+.nav nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.nav nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+}
+
+.nav .nav-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Cart badge styling */
+.cart-link {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -5px; /* Move it slightly upward */
+  right: -25px; /* Move it slightly to the right */
+  color: white;
+  border-radius: 50%;
+  padding: 4px 7px;
+  font-size: 12px;
+  min-width: 20px;
+  text-align: center;
+  z-index: 1; /* Ensure the badge appears above other elements */
+}
+
+/* Optional: Adjust the cart icon styling */
+.fa-cart-shopping {
+  font-size: 24px; /* Increase size if needed */
+  color: white; /* Make sure the color contrasts with the background */
+}
+
+header .burger_icon {
+  display: none;
+}
+
+.checkout-section {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  width: 100%;
+  gap: 40px;
+}
+
+.left-section {
+  flex: 1.5;
+  left: 20px;
+}
+
+.right-section {
+  padding: 20px;
+  background-color: #2a2d3e;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  width: 300px;
+ }
+
+.game-info {
+  text-align: center;
+}
+
+.game-logo {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.game-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.price-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.original-price {
+  color: white;
+  font-size: 1rem;
+}
+
+/* Specifications Section Styling */
+.specifications {
+  background-color: #2a2d3e; /* Dark background */
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.specifications h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.spec-item {
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column; /* Stack title and value vertically */
+}
+
+.spec-title {
+  color: #888; /* Light blue for labels */
+  font-weight: bold;
+  margin-bottom: 5px; /* Space between title and value */
+}
+
+.spec-value {
+  color: #fff; /* White text for the values */
+  font-weight: normal; /* Regular weight for values */
+}
+
+.spec-item:last-child {
+  margin-bottom: 0; /* No margin on last item */
+}
+
+
+/* Enhanced Button Styles */
+.btn {
+  border: none;
+  outline: none;
+  color: black;
+  background-color: white;
+  border-radius: 8px; /* Slightly rounded corners */
+  padding: 12px 20px; /* Increase padding for a more substantial feel */
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  transition: all 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.05); /* Slight scale effect on hover */
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3); /* More shadow on hover */
+}
+
+.btn-add-to-cart:active {
+  transform: scale(1.02); /* Slight shrink effect on click */
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
+}
+
+/* Details Styling */
+.game-details .detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #333; /* Separator line between items */
+}
+
+.game-details .detail-item:last-child {
+  border-bottom: none; /* Remove border on last item */
+}
+
+.detail-title {
+  color: #888; /* Lighter color for titles */
+  font-weight: normal;
+}
+
+.detail-value {
+  color: #fff; /* White text for values */
+  display: flex;
+  align-items: center;
+}
+
+.detail-value i {
+  margin-left: 5px; /* Icon spacing */
+  color: #888; /* Icon color to match title */
+}
+
+.see-all {
+  font-weight: bold;
+  color: #66ccff; /* Bright color for 'See All' */
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.see-all i {
+  font-size: 0.8rem;
+  color: #66ccff;
+}
+
+.game-details {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #a1a1a1;
+}
+
+.game-details a {
+  color: #66ccff;
+  text-decoration: none;
+}
+
+.tab-menu {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.tab-menu a {
+  color: #ffffff;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
+.tab-menu a.active {
+  border-bottom: 2px solid white;
+}
+
+.media-display {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.media-display img, .media-display video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 800px;
+  position: relative;
+}
+
+.carousel-images {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+.thumbnail {
+  width: 100px;
+  height: 70px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: white;
+  opacity: 0.7;
+}
+
+/* Product Information Section */
+.product-info {
+  padding: 20px 40px;
+  background-color: #2a2d3e;
+  border-radius: 10px;
+  color: white;
+  max-width: 800px;
+  margin: 20px auto 0;
+}
+
+.product-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.product-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #d0d0d0;
+  margin-bottom: 40px;
+}
+
+.d-flex {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.text-dark-light {
+  font-weight: bold;
+  color: #a0a0a0;
+  margin-bottom: 5px;
+}
+
+.d-flex a {
+  color: #66ccff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.d-flex a:hover {
+  color: #ffcc66;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: black;
+  border: 1px solid white;
+}
+::-webkit-scrollbar-track {
+  background-color: white;
+  border: 5px solid white;
+}
+::-webkit-scrollbar-button {
+  background-color: white;
+  background-repeat: no-repeat;   
+  background-size: 100%;
+  background-position: center;
+ }
+::-webkit-scrollbar-button:decrement {
+  background-image: url("/img/logo2.png");   
+ }
+::-webkit-scrollbar-button:increment {
+  background-image: url("/img/logo2.png"); 
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 600px) {
+  .wrapper, .grid-wrapper, .section-heading {
+      flex-direction: column;
+      align-items: center;
+      max-width: 560px;
+      min-width: 340px;
+  }
+
+  .heading-one {
+      font-size: 2.6rem;
+  }
+
+  .heading-two {
+      font-size: 1.8rem;
+  }
+
+  .section-heading {
+      text-align: center;
+      align-items: center;
+  }
+
+  .product-info {
+      padding: 20px;
+      max-width: 100%;
+  }
+}
+
+/* Rating Stars */
+.rating-star {
+  font-size: 1.5rem; /* Larger font size for visibility */
+  color: #ffd700; /* Gold color for filled stars */
+  margin-right: 5px; /* Space between stars */
+}
+
+/* For Empty Stars (If any empty stars are present like ☆) */
+.rating-star::after {
+  content: '☆'; /* If you want an empty star for non-filled rating */
+  color: #d3d3d3; /* Light gray for empty stars */
+}
+
+ /* Footer */
+ footer {
+  background-color: Black;
+}
+
+footer .wrapper .logo {
+  color: white;
+}
+
+footer .wrapper {
+  justify-content: center;
+  align-items: center;
+}
+
+footer .wrapper .col {
+  justify-self: flex-start;
+  align-self: flex-start;
+  gap: 15px;
+}
+
+footer .wrapper .col:nth-child(1) {
+  font-size: .9rem;
+}
+
+footer a:hover {
+  color: white;
+}

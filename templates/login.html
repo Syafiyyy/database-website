@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/static/css/login.css" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="/login.js" defer></script> <!-- Link to login.js -->
+    <script src="/register.js" defer></script> <!-- Link to register.js -->
+</head>
+<body>
+    <section class="container">
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <!-- Login Form -->
+                <form class="login-form" id="login-form">
+                    <h1>Login</h1>
+                    <div class="login-box">
+                        <div class="input-group">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="email" id="login-email" placeholder="" required>
+                            <label for="login-email">Email</label>
+                        </div>
+                        <div class="input-group">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" id="login-password" placeholder="" required>
+                            <label for="login-password">Password</label>
+                        </div>
+                        <div class="remember-me">
+                            <label for=""><input type="checkbox">Remember me</label>
+                            <a href="#" class="forgot-password">Forget password</a>
+                        </div>
+                        <button type="button" class="login-btn">Log in</button>
+                        <div class="register">
+                            <p>Don't have an account? <a href="#" class="flip-btn">Register</a></p>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Register Form -->
+                <form class="register-form" id="register-form">
+                    <h1>Register</h1>
+                    <div class="login-box">
+                        <div class="input-group">
+                            <ion-icon name="person-add-outline"></ion-icon>
+                            <input type="text" id="register-username" placeholder="" required>
+                            <label for="register-username">Username</label>
+                        </div>
+                        <div class="input-group">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="email" id="register-email" placeholder="" required>
+                            <label for="register-email">Email</label>
+                        </div>
+                        <div class="input-group">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" id="register-password" placeholder="" required>
+                            <label for="register-password">Password</label>
+                        </div>
+                        <div class="input-group">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" id="confirm-password" placeholder="" required>
+                            <label for="confirm-password">Confirm Password</label>
+                        </div>
+                        <button type="submit" class="register-btn">Register</button>
+                        <div class="register">
+                            <p>Already have an account? <a href="#" class="flip-btn">Login</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript for Flip Effect
+        const flipButtons = document.querySelectorAll('.flip-btn');
+        const flipBoxInner = document.querySelector('.flip-box-inner');
+
+        flipButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                flipBoxInner.classList.toggle('flipped');
+            });
+        });
+
+        // JavaScript for Login Form Submission
+        document.querySelector('.login-btn').addEventListener('click', async () => {
+            const email = document.getElementById('login-email').value;
+            const password = document.getElementById('login-password').value;
+
+            // Validate input
+            if (!email || !password) {
+                alert('Please enter both email and password');
+                return;
+            }
+
+            // Send login request to backend
+            const response = await fetch('/backend/user_login.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ username: email, password }),
+            });
+
+            const result = await response.json();
+
+            if (result.status === 'success') {
+                alert('Login successful!');
+                window.location.href = '/index.html'; // Redirect to home page after login
+            } else {
+                alert(result.message); // Show error message if login fails
+            }
+        });
+
+        // JavaScript for Register Form Submission
+        document.querySelector('.register-btn').addEventListener('click', async (e) => {
+            e.preventDefault(); // Prevent form submission
+
+            const username = document.getElementById('register-username').value;
+            const email = document.getElementById('register-email').value;
+            const password = document.getElementById('register-password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+
+            // Validate input
+            if (!username || !email || !password || !confirmPassword) {
+                alert('Please fill in all fields');
+                return;
+            }
+
+            if (password !== confirmPassword) {
+                alert('Passwords do not match');
+                return;
+            }
+
+            // Send registration request to backend
+            const response = await fetch('/backend/user_register.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ username, email, password }),
+            });
+
+            const result = await response.json();
+
+            if (result.status === 'success') {
+                alert('Registration successful! Please log in.');
+                document.querySelector('.flip-btn').click(); // Flip back to login form
+            } else {
+                alert(result.message); // Show error message if registration fails
+            }
+        });
+    </script>
+</body>
+</html>

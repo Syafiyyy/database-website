@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/img/logo.png" />
+    <script src="/carousel.js" defer></script>
+    <script src="/index.js" defer></script>
+    <link rel="stylesheet" href="/static/css/product.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Red Dead Redemption 2 | Marketplace Game</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="nav">
+            <a href="index.html" class="logo">Marketplace Game</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#arrival">Top Sale</a></li>
+                    <li><a href="#best-collection">Best Collection</a></li>
+                    <li><a href="library.html">Library</a></li>
+                </ul>
+                <div class="nav-icon">
+                    <a href="cart.html" class="cart-link">
+                        <span><i class="fa-solid fa-cart-shopping"></i></span>
+                        <span id="cartBadge" class="cart-badge">0</span>
+                    </a>
+                </div>
+            </nav>
+            <i class="fa-solid fa-bars burger_icon"></i>
+        </div>
+    </header>
+
+    <!-- Main Section for Red Dead Redemption 2 -->
+    <main class="checkout-section">
+        <div class="wrapper">
+            <!-- Left Section (Game Details) -->
+            <div class="left-section">
+                <h1>Red Dead Redemption 2</h1>
+                <div class="game-rating">
+                    <span class="rating-star">★★★☆</span>
+                    <span>4.5</span>
+                </div>
+
+                <!-- Tab Menu -->
+                <div class="tab-menu">
+                    <a href="#" class="active">Overview</a>
+                </div>
+
+                <!-- Main Display for Selected Image or Video -->
+                <div class="media-display" id="mainDisplay">
+                    <video id="carouselVideo" controls autoplay style="display:none;"></video>
+                    <img id="carouselImage" src="/static/photo/Read Dead.jpg" alt="Red Dead Redemption 2">
+                </div>
+
+                <!-- Carousel for Additional Images and Video -->
+                <div class="carousel">
+                    <button class="carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                    <div class="carousel-images">
+                        <!-- Video Thumbnail -->
+                        <div class="thumbnail" data-type="video" data-src="/static/video/read.webm">
+                            <img src="/static/photo/red.jpg" alt="Red Dead Redemption 2 Thumbnail">
+                            <i class="fa fa-play play-icon"></i>
+                        </div>
+                        <!-- Image Thumbnails -->
+                        <div class="thumbnail" data-type="image" data-src="/static/photo/red1.jpg">
+                            <img src="/static/photo/red1.jpg" alt="Screenshot 1">
+                        </div>
+                        <div class="thumbnail" data-type="image" data-src="/static/photo/red2.jpg">
+                            <img src="/static/photo/red2.jpg" alt="Screenshot 2">
+                        </div>
+                        <div class="thumbnail" data-type="image" data-src="/static/photo/red3.jpg">
+                            <img src="/static/photo/red3.jpg" alt="Screenshot 3">
+                        </div>
+                        <div class="thumbnail" data-type="image" data-src="/static/photo/red4.jpg">
+                            <img src="/static/photo/red4.jpg" alt="Screenshot 3">
+                        </div>
+                    </div>
+                    <button class="carousel-next"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+
+                <!-- Product Information Section -->
+                <section class="product-info">
+                    <div>
+                        Step into the boots of Arthur Morgan in this epic story of survival in America’s unforgiving heartland. Red Dead Redemption 2 brings a vast open world where danger and excitement await at every turn.
+                    </div>
+                    <div class="d-flex gap-md my-sm">
+                        <span>
+                            <div class="text-dark-light">Genres</div>
+                            <a href="">Action</a> <a href="">Adventure</a>
+                            <a href="">Open World</a>
+                        </span>
+                        <span>
+                            <div class="text-dark-light">Features</div>
+                            <a href="">Single Player</a> <a href="">Multiplayer</a>
+                            <a href="">Online</a>
+                        </span>
+                    </div>
+                    <div class="product-heading">Red Dead Redemption 2</div>
+                    <div class="product-description">
+                        Set in 1899, this game follows the story of Arthur Morgan, an outlaw navigating through the end of the Wild West era. With breathtaking landscapes, immersive storytelling, and rich character development, Red Dead Redemption 2 offers players a world full of dynamic interactions, wildlife, and a range of missions that paint a vivid picture of life as an outlaw. Will you stand by your gang, or forge your own path? Embark on a journey through history and explore what it truly means to be free.
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Section (Purchase Details) -->
+            <div class="right-section">
+                <div class="col">
+                    <div class="game-info">
+                        <img src="/static/photo/Read Dead.jpg" alt="Game Logo" class="game-logo">
+                        <h2 class="heading-three">Red Dead Redemption 2</h2>
+                        <div class="price-container">
+                            <span class="show-price">RM 369</span>
+                        </div>
+                        <button class="show-btn btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Details List in Right Section -->
+                <div class="game-details">
+                    <div class="detail-item">
+                        <span class="detail-title">Rewards</span>
+                        <span class="detail-value">Discount (20%) <i class="fa fa-info-circle"></i></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Refund Type</span>
+                        <span class="detail-value">Non-Refundable <i class="fa fa-question-circle"></i></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Developer</span>
+                        <span class="detail-value">Rockstar Games</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Publisher</span>
+                        <span class="detail-value">Rockstar Games</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Release Date</span>
+                        <span class="detail-value">6 Dec, 2019</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Platform</span>
+                        <span class="detail-value">Windows</span>
+                    </div>
+                </div>
+
+                <!-- New Specifications Section -->
+                <div class="specifications">
+                    <h3>Recommended</h3>
+                    <div class="spec-item">
+                        <span class="spec-title">OS:</span>
+                        <span class="spec-value">Windows 10</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-title">Processor:</span>
+                        <span class="spec-value">Intel Core i7-4770K / AMD Ryzen 5 1500X</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-title">Memory:</span>
+                        <span class="spec-value">12 GB</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-title">Storage:</span>
+                        <span class="spec-value">150 GB</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-title">Graphics:</span>
+                        <span class="spec-value">NVIDIA GeForce GTX 1060 6GB / AMD Radeon RX 480 4GB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

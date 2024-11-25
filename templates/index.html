@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+   <link rel="stylesheet" href="/static/css/index.css">
+   <script src="/index.js" defer></script>
+   <title>games</title>
+</head>
+
+<body>
+   <header class="header">
+      <div class="nav">
+         <a href="index.html" class="logo">Marketplace Game</a>
+         <nav>
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="#arrival">Top Sale</a></li>
+               <li><a href="#best-collection">Best Collection</a></li>
+               <li><a href="library.html">Library</a></li>
+            </ul>
+            <div class="nav-icon">
+               <a href="cart.html" class="cart-link">
+                  <span><i class="fa-solid fa-cart-shopping"></i></span>
+                  <span id="cartBadge" class="cart-badge">0</span> <!-- Badge to show item count -->
+               </a>
+
+            </div>
+         </nav>
+         <i class="fa-solid fa-bars burger_icon"></i>
+      </div>
+   </header>
+
+   <!-- Updated Hero Section -->
+   <main class="hero container">
+      <!-- Background Overlay with Image or Video -->
+      <div class="hero-background">
+         <img src="/static/photo/image.jpg" alt="Collection" class="background-image">
+      </div>
+      <!-- Text Overlay with Call to Action -->
+      <div class="wrapper">
+         <div class="col col-text" data-aos="fade-right">
+            <h1 class="heading-one">FEATURED & RECOMMENDED</h1>
+            <p class="sub-text">Discover our latest collection now and enjoy exclusive deals!</p>
+            <button class="btn btn-hero">Shop Now</button>
+         </div>
+   </main>
+   <!-- Arrival Section -->
+   <section class="arrival container" id="arrival">
+      <div class="section-heading" data-aos="zoom-in-up">
+         <div class="heading">
+            <p class="sub-heading">our Top collection</p>
+            <h2 class="heading-two">Top <span>Sales</span></h2>
+         </div>
+         <button class="btn">see all</button>
+      </div>
+      <div class="wrapper">
+         <div class="col" data-aos="zoom-in-up">
+            <figure>
+               <img src="/static/photo/fc24.jpg" alt="game" data-game-url="fc25.html" />
+            </figure>
+            <div class="col-body">
+               <p class="rating-icon"><i class="fa-solid fa-star"></i> <span class="rating-num">4.8</span></p>
+               <h3 class="heading-three">EA SPORTS FC25</h3>
+               <p class="sub-heading">RELEASE DATE: 27 Sep, 2024</p>
+               <div class="col-footer">
+                  <p class="show-price">RM 259</p>
+                  <button class="show-btn btn add-to-cart-btn" data-product-id="1" data-product-name="EA SPORTS FC25"
+                     data-product-price="259">
+                     Buy Now
+                  </button>
+               </div>
+            </div>
+         </div>
+         <div class="col" data-aos="zoom-in-up">
+            <figure>
+               <img src="/static/photo/wukong.jpg" alt="game" data-game-url="product_page.html" />
+            </figure>
+            <div class="col-body">
+               <p class="rating-icon"><i class="fa-solid fa-star"></i> <span class="rating-num">4.9</span></p>
+               <h3 class="heading-three">WUKONG</h3>
+               <p class="sub-heading">RELEASE DATE: 20 Aug, 2024</p>
+               <div class="col-footer">
+                  <p class="show-price">RM 219</p>
+                  <button class="show-btn btn add-to-cart-btn" data-product-id="2" data-product-name="WUKONG"
+                     data-product-price="219">
+                     Buy Now
+                  </button>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="col" data-aos="zoom-in-up">
+            <figure>
+               <img src="/static/photo/Reseident Evil.jpg" alt="game" data-game-url="product_page.html" />
+            </figure>
+            <div class="col-body">
+               <p class="rating-icon"><i class="fa-solid fa-star"></i> <span class="rating-num">4.3</span></p>
+               <h3 class="heading-three">RESIDENT EVIL</h3>
+               <p class="sub-heading">RELEASE DATE: 24 Mar, 2023</p>
+               <div class="col-footer">
+                  <p class="show-price">RM 187</p>
+                  <button class="show-btn btn add-to-cart-btn" data-product-id="3" data-product-name="RESIDENT EVIL"
+                     data-product-price="187">
+                     Buy Now
+                  </button>
+               </div>
+            </div>
+         </div>
+
+         <div class="col" data-aos="zoom-in-up">
+            <figure>
+               <img src="/static/photo/gta5.jpg" alt="game" data-game-url="product_page.html" />
+            </figure>
+            <div class="col-body">
+               <p class="rating-icon"><i class="fa-solid fa-star"></i> <span class="rating-num">4.1</span></p>
+               <h3 class="heading-three">GTA V</h3>
+               <p class="sub-heading">RELEASE DATE: 14 Apr, 2015</p>
+               <div class="col-footer">
+                  <p class="show-price">RM 111</p>
+                  <button class="show-btn btn add-to-cart-btn" data-product-id="4" data-product-name="GTA V"
+                     data-product-price="111">
+                     Buy Now
+                  </button>
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </section>
+   <!-- About Us Section -->
+   <section class="about-community">
+      <div class="content">
+         <h2>Join the Community</h2>
+         <p>>Meet new people, join groups, form clans, chat in-game and more! With over 100 million potential friends
+            (or enemies),
+            the fun never stops..</p>
+         <a href="login.html" class="cta-link">Login→</a>
+      </div>
+      <div class="graphics">
+         <img src="/static/photo/cta_hero_hardware.png" alt="Community Chat">
+      </div>
+   </section>
+   <!-- New Collection -->
+   <section class="collection container" id="best-collection">
+      <!-- Section Header -->
+      <div class="section-heading">
+         <div class="heading">
+            <p class="sub-heading">best collection</p>
+            <h2 class="heading-two">our collection</h2>
+         </div>
+         <div class="btn-section">
+            <button class="btn-col btn" data-btn="all">all</button>
+            <button class="btn-col btn" data-btn="men">top game</button>
+            <button class="btn-col btn" data-btn="women">free</button>
+            <button class="btn-col btn" data-btn="sports">trending</button>
+         </div>
+      </div>
+      <!-- section wrapper and col -->
+      <div class="grid-wrapper">
+         <div class="col collection-item" data-item="women" data-aos="zoom-in-up">
+            <figure>
+               <img src="/static/photo/Dota2.jpg" alt="game" data-game-url="product_page.html" />
+            </figure>
+            <div class="col-body">
+               <p class="rating-icon"><i class="fa-solid fa-star"></i> <span class="rating-num">4.2</span></p>
+               <h3 class="heading-three">DOTA 2</h3>
+               <p class="sub-heading">RELEASE DATE: 10 Jul, 2013</p>
+               <div class="col-footer">
+                  <p class="show-price">FREE</p>
+                  <button class="show-btn btn add-to-cart-btn" data-product-id="5" data-product-name="DOTA 2"
+                     data-product-price="0">
+                     Buy Now
+                  </button>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="col collection-item" data-item="sports" data-aos="zoom-in-up">
+            <figure>
+               <img src="/static/photo/hogwarts.jpg" alt="game" data-game-url="product_page.html" />
+            </figure>
+            <div class="col-body">
+               <p class="rating-icon"><i class="fa-solid fa-star"></i> <span class="rating-num">4.7</span></p>
+               <h3 class="heading-three">HOGWARTS</h3>
+               <p class="sub-heading">RELEASE DATE: 11 Feb, 2023</p>
+               <div class="col-footer">
+                  <p class="show-price">RM 249</p>
+                  <button class="show-btn btn add-to-cart-btn" data-product-id="6" data-product-name="HOGWARTS"
+                     data-product-price="249">
+                     Buy Now
+                  </button>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="col collection-item" data-item="men" data-aos="zoom-in-up">
+            <figure>
+               <img src="/static/photo/takken 8.jpg" alt="game" data-game-url="product_page.html" />
+            </figure>
+            <div class="col-body">
+               <p class="rating-icon"><i class="fa-solid fa-star"></i> <span class="rating-num">4.5</span></p>
+               <h3 class="heading-three">TEKKEN 8</h3>
+               <p class="sub-heading">RELEASE DATE: 26 Jan, 2024</p>
+               <div class="col-footer">
+                  <p class="show-price">RM 237</p>
+                  <button class="show-btn btn add-to-cart-btn" data-product-id="7" data-product-name="TEKKEN 8"
+                     data-product-price="237">
+                     Buy Now
+                  </button>
+               </div>
+            </div>
+         </div>
+
+         <div class="col collection-item" data-item="sports" data-aos="zoom-in-up">
+            <figure>
+               <img src="/static/photo/PROJECT ZOMBOID.jpg" alt="game" data-game-url="product_page.html" />
+            </figure>
+            <div class="col-body">
+               <p class="rating-icon"><i class="fa-solid fa-star"></i> <span class="rating-num">4.3</span></p>
+               <h3 class="heading-three">PROJECT ZOMBOID</h3>
+               <p class="sub-heading">RELEASE DATE: 8 Nov, 2013</p>
+               <div class="col-footer">
+                  <p class="show-price">RM 49</p>
+                  <button class="show-btn btn add-to-cart-btn" data-product-id="8" data-product-name="PROJECT ZOMBOID"
+                     data-product-price="49">
+                     Buy Now
+                  </button>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="col collection-item" data-item="women" data-aos="zoom-in-up">
+            <figure>
+               <img src="/static/photo/sims4.jpg" alt="game" data-game-url="product_page.html" />
+            </figure>
+            <div class="col-body">
+               <p class="rating-icon"><i class="fa-solid fa-star"></i> <span class="rating-num">4.6</span></p>
+               <h3 class="heading-three">THE SIMS 4</h3>
+               <p class="sub-heading">RELEASE DATE: 11 Mar, 2015</p>
+               <div class="col-footer">
+                  <p class="show-price">FREE</p>
+                  <button class="show-btn btn add-to-cart-btn" data-product-id="9" data-product-name="THE SIMS 4"
+                     data-product-price="0">
+                     Buy Now
+                  </button>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="col collection-item" data-item="men" data-aos="zoom-in-up">
+            <figure>
+               <img src="/static/photo/Read Dead.jpg" alt="game" data-game-url="product_page.html" />
+            </figure>
+            <div class="col-body">
+               <p class="rating-icon"><i class="fa-solid fa-star"></i> <span class="rating-num">4.5</span></p>
+               <h3 class="heading-three">RED DEAD REDEMPTION 2</h3>
+               <p class="sub-heading">RELEASE DATE: 6 Dec, 2019</p>
+               <div class="col-footer">
+                  <p class="show-price">RM 369</p>
+                  <button class="show-btn btn add-to-cart-btn" data-product-id="10"
+                     data-product-name="RED DEAD REDEMPTION 2" data-product-price="369">
+                     Buy Now
+                  </button>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="col collection-item" data-item="sports" data-aos="zoom-in-up">
+            <figure>
+               <img src="/static/photo/2k 25.jpg" alt="game" data-game-url="product_page.html" />
+            </figure>
+            <div class="col-body">
+               <p class="rating-icon"><i class="fa-solid fa-star"></i> <span class="rating-num">4.4</span></p>
+               <h3 class="heading-three">NBA 2K25</h3>
+               <p class="sub-heading">RELEASE DATE: 29 Oct, 2024</p>
+               <div class="col-footer">
+                  <p class="show-price">RM 275</p>
+                  <button class="show-btn btn add-to-cart-btn" data-product-id="11" data-product-name="NBA 2K25"
+                     data-product-price="275">
+                     Buy Now
+                  </button>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="col collection-item" data-item="sports" data-aos="zoom-in-up">
+            <figure>
+               <img src="/static/photo/RAFT.jpg" alt="game" data-game-url="product_page.html" />
+            </figure>
+            <div class="col-body">
+               <p class="rating-icon"><i class="fa-solid fa-star"></i> <span class="rating-num">4.3</span></p>
+               <h3 class="heading-three">RAFT</h3>
+               <p class="sub-heading">RELEASE DATE: 21 Jun, 2022</p>
+               <div class="col-footer">
+                  <p class="show-price">RM 38</p>
+                  <button class="show-btn btn add-to-cart-btn" data-product-id="12" data-product-name="RAFT"
+                     data-product-price="38">
+                     Buy Now
+                  </button>
+               </div>
+            </div>
+         </div>
+
+         <div class="col collection-item" data-item="women" data-aos="zoom-in-up">
+            <figure>
+               <img src="/static/photo/Among Us.jpg" alt="game" data-game-url="product_page.html" />
+            </figure>
+            <div class="col-body">
+               <p class="rating-icon"><i class="fa-solid fa-star"></i> <span class="rating-num">4.5</span></p>
+               <h3 class="heading-three">AMONG US</h3>
+               <p class="sub-heading">RELEASE DATE: 17 Nov, 2018</p>
+               <div class="col-footer">
+                  <p class="show-price">FREE</p>
+                  <button class="show-btn btn add-to-cart-btn" data-product-id="13" data-product-name="AMONG US"
+                     data-product-price="0">
+                     Buy Now
+                  </button>
+               </div>
+            </div>
+         </div>
+
+         <div class="col collection-item" data-item="men" data-aos="zoom-in-up">
+            <figure>
+               <img src="/static/photo/Elden Ring.jpg" alt="game" data-game-url="product_page.html" />
+            </figure>
+            <div class="col-body">
+               <p class="rating-icon"><i class="fa-solid fa-star"></i> <span class="rating-num">4.7</span></p>
+               <h3 class="heading-three">ELDEN RING</h3>
+               <p class="sub-heading">RELEASE DATE: 25 Feb, 2022</p>
+               <div class="col-footer">
+                  <p class="show-price">RM 199</p>
+                  <button class="show-btn btn add-to-cart-btn" data-product-id="14" data-product-name="ELDEN RING"
+                     data-product-price="199">
+                     Buy Now
+                  </button>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="col collection-item" data-item="men" data-aos="zoom-in-up">
+            <figure>
+               <img src="/static/photo/Spider.jpg" alt="game" data-game-url="product_page.html" />
+            </figure>
+            <div class="col-body">
+               <p class="rating-icon"><i class="fa-solid fa-star"></i> <span class="rating-num">4.5</span></p>
+               <h3 class="heading-three">MILES MORALES</h3>
+               <p class="sub-heading">RELEASE DATE: 18 Nov, 2022</p>
+               <div class="col-footer">
+                  <p class="show-price">RM 209</p>
+                  <button class="show-btn btn add-to-cart-btn" data-product-id="15" data-product-name="MILES MORALES"
+                     data-product-price="209">
+                     Buy Now
+                  </button>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="col collection-item" data-item="women" data-aos="zoom-in-up">
+            <figure>
+               <img src="/static/photo/APEX.jpg" alt="game" data-game-url="product_page.html" />
+            </figure>
+            <div class="col-body">
+               <p class="rating-icon"><i class="fa-solid fa-star"></i> <span class="rating-num">4.3</span></p>
+               <h3 class="heading-three">APEX LEGENDS</h3>
+               <p class="sub-heading">RELEASE DATE: 5 Nov, 2020</p>
+               <div class="col-footer">
+                  <p class="show-price">FREE</p>
+                  <button class="show-btn btn add-to-cart-btn" data-product-id="16" data-product-name="APEX LEGENDS"
+                     data-product-price="0">
+                     Buy Now
+                  </button>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="col collection-item" data-item="sports" data-aos="zoom-in-up">
+            <figure>
+               <img src="/static/photo/Horizon.jpg" alt="game" data-game-url="product_page.html" />
+            </figure>
+            <div class="col-body">
+               <p class="rating-icon"><i class="fa-solid fa-star"></i> <span class="rating-num">4.1</span></p>
+               <h3 class="heading-three">HORIZON FORBIDDEN</h3>
+               <p class="sub-heading">RELEASE DATE: 21 Mar, 2024</p>
+               <div class="col-footer">
+                  <p class="show-price">RM 249</p>
+                  <button class="show-btn btn add-to-cart-btn" data-product-id="17"
+                     data-product-name="HORIZON FORBIDDEN" data-product-price="249">
+                     Buy Now
+                  </button>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="col collection-item" data-item="sports" data-aos="zoom-in-up">
+            <figure>
+               <img src="/static/photo/Subnatica.jpg" alt="game" data-game-url="product_page.html" />
+            </figure>
+            <div class="col-body">
+               <p class="rating-icon"><i class="fa-solid fa-star"></i> <span class="rating-num">4.1</span></p>
+               <h3 class="heading-three">SUBNAUTICA</h3>
+               <p class="sub-heading">RELEASE DATE: 23 Jan, 2018</p>
+               <div class="col-footer">
+                  <p class="show-price">RM 72</p>
+                  <button class="show-btn btn add-to-cart-btn" data-product-id="18" data-product-name="SUBNAUTICA"
+                     data-product-price="72">
+                     Buy Now
+                  </button>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="col collection-item" data-item="men" data-aos="zoom-in-up">
+            <figure>
+               <img src="/static/photo/God of War.jpg" alt="game" data-game-url="product_page.html" />
+            </figure>
+            <div class="col-body">
+               <p class="rating-icon"><i class="fa-solid fa-star"></i> <span class="rating-num">4.1</span></p>
+               <h3 class="heading-three">GOD OF WAR RAGNAROK</h3>
+               <p class="sub-heading">RELEASE DATE: 19 Sep, 2024</p>
+               <div class="col-footer">
+                  <p class="show-price">RM 249</p>
+                  <button class="show-btn btn add-to-cart-btn" data-product-id="19"
+                     data-product-name="GOD OF WAR RAGNAROK" data-product-price="249">
+                     Buy Now
+                  </button>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="col collection-item" data-item="sports" data-aos="zoom-in-up">
+            <figure>
+               <img src="/static/photo/Big Ambitions.jpg" alt="game" data-game-url="product_page.html" />
+            </figure>
+            <div class="col-body">
+               <p class="rating-icon"><i class="fa-solid fa-star"></i> <span class="rating-num">4.3</span></p>
+               <h3 class="heading-three">BIG AMBITIONS</h3>
+               <p class="sub-heading">RELEASE DATE: 11 Mar, 2023</p>
+               <div class="col-footer">
+                  <p class="show-price">RM 56.12</p>
+                  <button class="show-btn btn add-to-cart-btn" data-product-id="20" data-product-name="BIG AMBITIONS"
+                     data-product-price="56.12">
+                     Buy Now
+                  </button>
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </section>
+   <!-- Testimonials Customer Review -->
+   <section class="testimonial container" data-aos="zoom-in-up">
+      <div class="clr-one"></div>
+      <div class="section-heading">
+         <div class="heading">
+            <p class="sub-heading">testimonial</p>
+            <h2 class="heading-two">What our customer says</h2>
+         </div>
+      </div>
+      <div class="wrapper">
+         <div class="col" data-aos="zoom-in-up">
+            <figure>
+               <img src="/static/photo/photo.png" alt="men">
+            </figure>
+            <h3 class="heading-three">Adam</h3>
+            <p class="testi-messaa">As someone who plays career mode frequently, I really appreciate the game's
+               realistic structure.
+               However, the various issues with the PC version can be frustrating. For instance, the game often doesn't
+               start,
+               and I have to restart EA anticheat. I believe optimization problems like these shouldn't exist, as they
+               are a crucial
+               factor..</p>
+            <span class="rating">
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-regular fa-star"></i>
+            </span>
+         </div>
+
+         <div class="col" data-aos="zoom-in-up">
+            <figure>
+               <img src="/static/photo/photo.png" alt="men">
+            </figure>
+            <h3 class="heading-three">Syafi</h3>
+            <p class="testi-messaa">Great game, went through 5 chapters completely, really like changing builds and
+               customizing each boss,
+               recommend to everyone! I also like this website because they have 20% off on WUKONG game, which is
+               awesome!</p>
+            <span class="rating">
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+            </span>
+         </div>
+
+         <div class="col" data-aos="zoom-in-up">
+            <figure>
+               <img src="/static/photo/photo.png" alt="men">
+            </figure>
+            <h3 class="heading-three">Ahmad</h3>
+            <p class="testi-messaa">Fantastic game, and an excellent game for fans of the old game like me, and new fans
+               picking up the
+               franchise for the first time. A brilliant reboot with incredible visuals, combat and storytelling. Would
+               absolutely
+               recommend it to anyone curious of the God of War Franchise!
+               .
+            </p>
+            <span class="rating">
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-regular fa-star-half-stroke fa-star"></i>
+            </span>
+         </div>
+      </div>
+   </section>
+   <!-- Subscribe Section -->
+   <section class="subscribe container">
+      <div class="wrapper">
+         <h2 class="heading-two">Subscribe for news and latest updates</h2>
+         <form id="subscribeForm">
+            <!-- Remove the 'required' attribute -->
+            <input type="email" id="emailInput" class="email" placeholder="example@gmail.com">
+            <button type="submit" class="btn">Subscribe</button>
+         </form>
+         <p id="confirmationMessage" style="display: none; color: green; font-weight: bold;">We already sent it to your
+            email.</p>
+      </div>
+   </section>
+   s
+   <!-- Footer Section -->
+   <footer class="container">
+      <div class="wrapper">
+         <div class="col" data-aos="zoom-in">
+            <a href="index.html" class="logo">Market Place Game</a>
+            <p class="about-website">This website is a game marketplace offering a wide variety of games at very
+               affordable prices.
+               You can easily find your favorite games, whether for console, PC, or other platforms. With exciting
+               promotions and
+               discount offers, it’s the perfect place to fulfill your gaming needs without worrying about your budget!.
+            </p>
+         </div>
+         <div class="col" data-aos="zoom-in">
+            <h4>quick links</h4>
+            <a href="index.html">Home</a>
+            <a href="#about">Top Sale</a>
+            <a href="#arrival">Best Collection</a>
+         </div>
+         <div class="col" data-aos="zoom-in">
+            <h4>contact us</h4>
+            <p>Marketplace@gmail.com</p>
+            <p>0198828133</p>
+         </div>
+      </div>
+   </footer>
+
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+      AOS.init();
+   </script>
+
+</body>
+
+</html>

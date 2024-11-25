@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/img/logo.png" />
+    <script src="/carousel.js" defer></script>
+    <script src="/index.js" defer></script>
+    <link rel="stylesheet" href="/static/css/product.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Project Zomboid | Marketplace Game</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="nav">
+            <a href="index.html" class="logo">Marketplace Game</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#arrival">Top Sale</a></li>
+                    <li><a href="#best-collection">Best Collection</a></li>
+                    <li><a href="library.html">Library</a></li>
+                </ul>
+                <div class="nav-icon">
+                    <a href="cart.html" class="cart-link">
+                        <span><i class="fa-solid fa-cart-shopping"></i></span>
+                        <span id="cartBadge" class="cart-badge">0</span>
+                    </a>
+                </div>
+            </nav>
+            <i class="fa-solid fa-bars burger_icon"></i>
+        </div>
+    </header>
+
+    <!-- Main Section for Project Zomboid -->
+    <main class="checkout-section">
+        <div class="wrapper">
+            <!-- Left Section (Game Details) -->
+            <div class="left-section">
+                <h1>Project Zomboid</h1>
+                <div class="game-rating">
+                    <span class="rating-star">★★★☆</span>
+                    <span>4.3</span>
+                </div>
+
+                <!-- Tab Menu -->
+                <div class="tab-menu">
+                    <a href="#" class="active">Overview</a>
+                </div>
+
+                <!-- Main Display for Selected Image or Video -->
+                <div class="media-display" id="mainDisplay">
+                    <video id="carouselVideo" controls autoplay style="display:none;"></video>
+                    <img id="carouselImage" src="/static/photo/PROJECT ZOMBOID.jpg" alt="Project Zomboid">
+                </div>
+
+                <!-- Carousel for Additional Images and Video -->
+                <div class="carousel">
+                    <button class="carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                    <div class="carousel-images">
+                        <!-- Video Thumbnail -->
+                        <div class="thumbnail" data-type="video" data-src="/static/video/project.webm">
+                            <img src="/static/photo/project thumbnail.jpg" alt="Project Zomboid Thumbnail">
+                            <i class="fa fa-play play-icon"></i>
+                        </div>
+                        <!-- Image Thumbnails -->
+                        <div class="thumbnail" data-type="image" data-src="/static/photo/project1.jpg">
+                            <img src="/static/photo/project1.jpg" alt="Project Zomboid Screenshot 1">
+                        </div>
+                        <div class="thumbnail" data-type="image" data-src="/static/photo/project2.jpg">
+                            <img src="/static/photo/project2.jpg" alt="Project Zomboid Screenshot 2">
+                        </div>
+                        <div class="thumbnail" data-type="image" data-src="/static/photo/project3.jpg">
+                            <img src="/static/photo/project3.jpg" alt="Project Zomboid Screenshot 2">
+                        </div>
+                        <div class="thumbnail" data-type="image" data-src="/static/photo/project4.jpg">
+                            <img src="/static/photo/project4.jpg" alt="Project Zomboid Screenshot 2">
+                        </div>
+                    </div>
+                    <button class="carousel-next"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+
+                <!-- Product Information Section -->
+                <section class="product-info">
+                    <div>
+                        Survive in the brutal, unforgiving world of Project Zomboid, a game that combines hardcore survival mechanics with a unique zombie apocalypse setting.
+                    </div>
+                    <div class="d-flex gap-md my-sm">
+                        <span>
+                            <div class="text-dark-light">Genres</div>
+                            <a href="">Survival</a> <a href="">Simulation</a>
+                            <a href="">Open World</a>
+                        </span>
+                        <span>
+                            <div class="text-dark-light">Features</div>
+                            <a href="">Single Player</a>, <a href="">Multiplayer</a>
+                        </span>
+                    </div>
+                    <div class="product-heading">Project Zomboid</div>
+                    <div class="product-description">
+                        Can you survive the end? Project Zomboid is an open-world survival horror game that dares players to try and survive in a post-apocalyptic world overrun with zombies. Find resources, craft, build, and fend off the undead while managing your health, needs, and mental state in this realistic survival experience.
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Section (Purchase Details) -->
+            <div class="right-section">
+                <div class="col"> <!-- Added .col for matching JS logic -->
+                    <div class="game-info">
+                        <img src="/static/photo/PROJECT ZOMBOID.jpg" alt="Game Logo" class="game-logo">
+                        <h2 class="heading-three">Project Zomboid</h2> <!-- Product name -->
+                        <div class="price-container">
+                            <span class="show-price">RM 49</span> <!-- Product price -->
+                        </div>
+                        <button class="show-btn btn">Add to Cart</button> <!-- Button with class 'show-btn' -->
+                    </div>
+                </div>
+
+                <!-- Details List in Right Section -->
+                <div class="game-details">
+                    <div class="detail-item">
+                        <span class="detail-title">Rewards</span>
+                        <span class="detail-value">Discount (20%) <i class="fa fa-info-circle"></i></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Refund Type</span>
+                        <span class="detail-value">Non-Refundable <i class="fa fa-question-circle"></i></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Developer</span>
+                        <span class="detail-value">The Indie Stone</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Publisher</span>
+                        <span class="detail-value">The Indie Stone</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Release Date</span>
+                        <span class="detail-value">8 Nov, 2013</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Platform</span>
+                        <span class="detail-value">Windows</span>
+                    </div>
+                </div>
+
+                <!-- New Specifications Section -->
+                <div class="specifications">
+                    <h3>Recommended</h3>
+                    <div class="spec-item">
+                        <span class="spec-title">OS:</span>
+                        <span class="spec-value">Windows 10</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-title">Processor:</span>
+                        <span class="spec-value">Intel Core i5-6600K or equivalent</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-title">Memory:</span>
+                        <span class="spec-value">8 GB</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-title">Storage:</span>
+                        <span class="spec-value">15 GB</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-title">Graphics:</span>
+                        <span class="spec-value">NVIDIA GeForce GTX 770 or equivalent</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

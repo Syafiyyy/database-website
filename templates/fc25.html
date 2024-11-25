@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/img/logo.png" />
+    <script src="/carousel.js" defer></script>
+    <script src="/index.js" defer></script>
+    <link rel="stylesheet" href="/static/css/product.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <title>Checkout | Marketplace Game</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="nav">
+            <a href="index.html" class="logo">Marketplace Game</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#arrival">Top Sale</a></li>
+                    <li><a href="#best-collection">Best Collection</a></li>
+                    <li><a href="library.html">Library</a></li>
+                </ul>
+                <div class="nav-icon">
+                    <a href="cart.html" class="cart-link">
+                        <span><i class="fa-solid fa-cart-shopping"></i></span>
+                        <span id="cartBadge" class="cart-badge">0</span>
+                    </a>
+                </div>
+            </nav>
+            <i class="fa-solid fa-bars burger_icon"></i>
+        </div>
+    </header>
+
+    <!-- Main Section for Checkout -->
+    <main class="checkout-section">
+        <div class="wrapper">
+            <!-- Left Section (Game Details) -->
+            <div class="left-section">
+                <h1>EA SPORTS FC™ 25 Standard Edition</h1>
+                <div class="game-rating">
+                    <span class="rating-star">★★★☆</span>
+                    <span>4.2</span>
+                </div>
+
+                <!-- Tab Menu -->
+                <div class="tab-menu">
+                    <a href="#" class="active">Overview</a>
+                </div>
+
+                <!-- Main Display for Selected Image or Video -->
+                <div class="media-display" id="mainDisplay">
+                    <video id="carouselVideo" controls autoplay style="display:none;"></video>
+                    <img id="carouselImage" src="/static/photo/fc25.jpg" alt="EA SPORTS FC 25">
+                </div>
+
+                <!-- Carousel for Additional Images and Video -->
+                <div class="carousel">
+                    <button class="carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                    <div class="carousel-images">
+                        <!-- Video Thumbnail for Video -->
+                        <div class="thumbnail" data-type="video" data-src="/static/video/fc25.webm">
+                            <img src="/static/photo/fc25 thumbnail.jpg" alt="FC25 Thumbnail">
+                            <i class="fa fa-play play-icon"></i>
+                        </div>
+                        <!-- Image Thumbnails -->
+                        <div class="thumbnail" data-type="image" data-src="/static/photo/fc25 1.jpg">
+                            <img src="/static/photo/fc25 1.jpg" alt="FC25 Screenshot 1">
+                        </div>
+                        <div class="thumbnail" data-type="image" data-src="/static/photo/fc25 2.jpg">
+                            <img src="/static/photo/fc25 2.jpg" alt="FC25 Screenshot 2">
+                        </div>
+                        <div class="thumbnail" data-type="image" data-src="/static/photo/fc25 3.jpg">
+                            <img src="/static/photo/fc25 3.jpg" alt="FC25 Screenshot 3">
+                        </div>
+                        <div class="thumbnail" data-type="image" data-src="/static/photo/fc25 4.jpg">
+                            <img src="/static/photo/fc25 4.jpg" alt="FC25 Screenshot 4">
+                        </div>
+                    </div>
+                    <button class="carousel-next"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+
+                <!-- Product Information Section -->
+                <section class="product-info">
+                    <div>
+                        EA SPORTS FC™ 25 gives you more ways to win for the club. Team up with friends in your favourite modes with 
+                        the new 5v5 Rush, and manage your club to victory as FC IQ delivers more tactical control than ever before.
+                    </div>
+                    <div class="d-flex gap-md my-sm">
+                        <span>
+                            <div class="text-dark-light">Genres</div>
+                            <a href="">Sport</a> <a href="">Simulation</a>
+                            <a href="">Football</a> <a href="">Controller</a>
+                        </span>
+                        <span>
+                            <div class="text-dark-light">Features</div>
+                            <a href="">Controller Support</a>,
+                            <a href="">Single Player</a>
+                            <a href="">Online</a>
+                        </span>
+                    </div>
+                    <div class="product-heading">EA SPORTS FC™ 25</div>
+                    <div class="product-description">
+                        FC25 is an immersive, open-world action game set in the fast-paced, high-stakes world of international football. 
+                        Step into the boots of a rising star, driven to leave a mark on and off the pitch. With advanced graphics, 
+                        player customization, and realistic gameplay, FC25 offers a dynamic experience where your tactics, skills, 
+                        and choices will shape your journey to becoming a football legend. Master your playstyle, form alliances, 
+                        and navigate the challenges of fame and glory. Every decision impacts your career, relationships, 
+                        and legacy in the world of football. Will you rise to the top? The pitch awaits make your mark.
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Section (Purchase Details) -->
+            <div class="right-section">
+                <div class="col"> <!-- Added .col for matching JS logic -->
+                    <div class="game-info">
+                        <img src="/static/photo/fc24.jpg" alt="Game Logo" class="game-logo">
+                        <h2 class="heading-three">EA SPORTS FC™ 25</h2> <!-- Product name -->
+                        <div class="price-container">
+                            <span class="show-price">RM 259</span> <!-- Product price -->
+                        </div>
+                        <button class="show-btn btn">Add to Cart</button> <!-- Button with class 'show-btn' -->
+                    </div>
+                </div>
+
+                <!-- Details List in Right Section -->
+                <div class="game-details">
+                    <div class="detail-item">
+                        <span class="detail-title">Rewards</span>
+                        <span class="detail-value">Discount (20%) <i class="fa fa-info-circle"></i></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Refund Type</span>
+                        <span class="detail-value">Non-Refundable <i class="fa fa-question-circle"></i></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Developer</span>
+                        <span class="detail-value">EA Canada & EA Romania</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Publisher</span>
+                        <span class="detail-value">Electronic Arts</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Release Date</span>
+                        <span class="detail-value">09/27/24</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Platform</span>
+                        <span class="detail-value">Window</span>
+                    </div>
+                </div>
+
+                <!-- New Specifications Section -->
+                <div class="specifications">
+                    <h3>Recommended</h3>
+                    <div class="spec-item">
+                        <span class="spec-title">OS:</span>
+                        <span class="spec-value">Windows 10 - 64-Bit (Latest Update)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-title">Processor:</span>
+                        <span class="spec-value">Intel Core i7-6700 @ 3.40GHz or AMD Ryzen 7 2700X @ 3.7 GHz</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-title">Memory:</span>
+                        <span class="spec-value">12 GB</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-title">Storage:</span>
+                        <span class="spec-value">100 GB</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-title">Direct X:</span>
+                        <span class="spec-value">12 Compatible video card or equivalent (Feature Level 12_0)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-title">Graphics:</span>
+                        <span class="spec-value">NVIDIA GeForce GTX 1660 or AMD RX 5600 XT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

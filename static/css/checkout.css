@@ -1,0 +1,381 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+  
+  li {
+    list-style-type: none;
+    text-transform: capitalize;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'poppins';
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: var(black);
+  }
+  
+  p {
+    color: var(black);
+  }
+  
+  body {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  
+  /* Header Section */
+  header {
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #181a1b;
+  }
+  
+  header .nav {
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .nav .logo {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: oblique;
+    color: white;
+  }
+  
+  .nav nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .nav nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+  }
+  
+  .nav .nav-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Cart badge styling */
+  .cart-link {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .cart-badge {
+    position: absolute;
+    top: -5px; /* Move it slightly upward */
+    right: -25px; /* Move it slightly to the right */
+    color: white;
+    border-radius: 50%;
+    padding: 4px 7px;
+    font-size: 12px;
+    min-width: 20px;
+    text-align: center;
+    z-index: 1; /* Ensure the badge appears above other elements */
+  }
+  
+  /* Optional: Adjust the cart icon styling */
+  .fa-cart-shopping {
+    font-size: 24px; /* Increase size if needed */
+    color: white; /* Make sure the color contrasts with the background */
+  }
+  
+  header .burger_icon {
+    display: none;
+  }
+  
+  .checkout-section {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    width: 100%;
+    gap: 40px;
+  }
+
+/* Checkout Section */
+.checkout-section {
+    margin-top: 120px;
+    margin-left: 100px;
+    width: 100%;
+    max-width: 1280px;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.checkout-wrapper {
+    width: 100%;
+    max-width: 960px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+}
+
+.heading {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+/* Payment Method Section */
+.payment-method h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.payment-options {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+}
+
+.option input[type="radio"] {
+    margin-right: 10px;
+}
+
+.option label img {
+    width: 50px;
+    height: auto;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.form-row input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+    color: #333;
+    background: #f9f9f9;
+    outline: none;
+}
+
+.form-row input:focus {
+    border-color: #007bff;
+}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-later, .btn-submit {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-later {
+  border: none;
+  outline: none;
+  color: black;
+  background-color: white;
+  border-radius: 8px; /* Slightly rounded corners */
+  padding: 12px 20px; /* Increase padding for a more substantial feel */
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  transition: all 0.3s ease, transform 0.2s ease;
+}
+
+.btn-later:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.05); /* Slight scale effect on hover */
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3); /* More shadow on hover */
+}
+
+.btn-submit {
+  border: none;
+  outline: none;
+  color: black;
+  background-color: white;
+  border-radius: 8px; /* Slightly rounded corners */
+  padding: 12px 20px; /* Increase padding for a more substantial feel */
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  transition: all 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.05); /* Slight scale effect on hover */
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3); /* More shadow on hover */
+}
+
+/* Summary Section */
+.checkout-summary {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.checkout-summary h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.checkout-summary ul {
+    list-style-type: none;
+}
+
+.checkout-summary li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.checkout-summary .total {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #666;
+    margin: 15px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Receipt Section Styling */
+#receiptSection {
+  display: flex;
+  flex-direction: column; /* Arrange content vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  position: fixed; /* Fix position in the viewport */
+  top: 50%; /* Move the section to the vertical center */
+  left: 50%; /* Move the section to the horizontal center */
+  transform: translate(-50%, -50%); /* Adjust for the receipt's dimensions */
+  background-color: #fff; /* White background */
+  color: #333; /* Dark text color */
+  border: 2px solid #ddd; /* Light border for framing */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Add spacing inside */
+  max-width: 600px; /* Limit the width of the receipt */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center; /* Center-align the content */
+  z-index: 100; /* Ensure it appears above other elements */
+}
+
+/* Receipt Details */
+#receiptDetails {
+  font-size: 16px; /* Medium font size */
+  line-height: 1.6; /* Spacing between lines */
+  color: #333; /* Ensure readable text color */
+  margin: 10px 0; /* Spacing above and below */
+  text-align: left; /* Align details to the left for better formatting */
+}
+
+/* Button for Returning to Homepage */
+#receiptSection .btn {
+  border: none;
+  outline: none;
+  color: white;
+  background-color: black;
+  border-radius: 8px; /* Slightly rounded corners */
+  padding: 12px 20px; /* Increase padding for a more substantial feel */
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  transition: all 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Button Hover Effect */
+#receiptSection .btn:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.05); /* Slight scale effect on hover */
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3); /* More shadow on hover */
+}
+

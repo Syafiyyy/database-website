@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/img/logo.png" />
+    <script src="/carousel.js" defer></script>
+    <script src="/index.js" defer></script>
+    <link rel="stylesheet" href="/static/css/product.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>RAFT | Marketplace Game</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="nav">
+            <a href="index.html" class="logo">Marketplace Game</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#arrival">Top Sale</a></li>
+                    <li><a href="#best-collection">Best Collection</a></li>
+                    <li><a href="library.html">Library</a></li>
+                </ul>
+                <div class="nav-icon">
+                    <a href="cart.html" class="cart-link">
+                        <span><i class="fa-solid fa-cart-shopping"></i></span>
+                        <span id="cartBadge" class="cart-badge">0</span>
+                    </a>
+                </div>
+            </nav>
+            <i class="fa-solid fa-bars burger_icon"></i>
+        </div>
+    </header>
+
+    <!-- Main Section for RAFT -->
+    <main class="checkout-section">
+        <div class="wrapper">
+            <!-- Left Section (Game Details) -->
+            <div class="left-section">
+                <h1>RAFT</h1>
+                <div class="game-rating">
+                    <span class="rating-star">★★★☆</span>
+                    <span>4.3</span>
+                </div>
+
+                <!-- Tab Menu -->
+                <div class="tab-menu">
+                    <a href="#" class="active">Overview</a>
+                </div>
+
+                <!-- Main Display for Selected Image or Video -->
+                <div class="media-display" id="mainDisplay">
+                    <video id="carouselVideo" controls autoplay style="display:none;"></video>
+                    <img id="carouselImage" src="/static/photo/RAFT.jpg" alt="RAFT">
+                </div>
+
+                <!-- Carousel for Additional Images and Video -->
+                <div class="carousel">
+                    <button class="carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                    <div class="carousel-images">
+                        <!-- Video Thumbnail -->
+                        <div class="thumbnail" data-type="video" data-src="/static/video/raft.webm">
+                            <img src="/static/photo/raft thumbnail.jpg" alt="RAFT Thumbnail">
+                            <i class="fa fa-play play-icon"></i>
+                        </div>
+                        <!-- Image Thumbnails -->
+                        <div class="thumbnail" data-type="image" data-src="/static/photo/raft1.jpg">
+                            <img src="/static/photo/raft1.jpg" alt="Screenshot 1">
+                        </div>
+                        <div class="thumbnail" data-type="image" data-src="/static/photo/raft2.jpg">
+                            <img src="/static/photo/raft2.jpg" alt="Screenshot 2">
+                        </div>
+                        <div class="thumbnail" data-type="image" data-src="/static/photo/raft3.jpg">
+                            <img src="/static/photo/raft3.jpg" alt="Screenshot 3">
+                        </div>
+                        <div class="thumbnail" data-type="image" data-src="/static/photo/raft4.jpg">
+                            <img src="/static/photo/raft4.jpg" alt="Screenshot 3">
+                        </div>
+                    </div>
+                    <button class="carousel-next"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+
+                <!-- Product Information Section -->
+                <section class="product-info">
+                    <div>
+                        Stranded on a small raft with nothing but a hook made of old plastic, players awake on a vast, blue ocean totally alone and with no land in sight! Their only refuge is the raft they must build to survive.
+                    </div>
+                    <div class="d-flex gap-md my-sm">
+                        <span>
+                            <div class="text-dark-light">Genres</div>
+                            <a href="">Survival</a> <a href="">Adventure</a>
+                            <a href="">Multiplayer</a>
+                        </span>
+                        <span>
+                            <div class="text-dark-light">Features</div>
+                            <a href="">Online Co-op</a> <a href="">Open World</a>
+                        </span>
+                    </div>
+                    <div class="product-heading">RAFT</div>
+                    <div class="product-description">
+                        Dive into the world of RAFT, a unique survival adventure where you must gather resources, build your floating fortress, and explore an endless ocean. As you fend off dangers from the sea and sky, collaborate with friends in multiplayer mode or brave the challenges alone. With a mix of strategy and creativity, RAFT delivers an immersive and thrilling gameplay experience. Will you conquer the waves or succumb to the ocean's depths? The choice is yours.
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Section (Purchase Details) -->
+            <div class="right-section">
+                <div class="col">
+                    <div class="game-info">
+                        <img src="/static/photo/RAFT.jpg" alt="Game Logo" class="game-logo">
+                        <h2 class="heading-three">RAFT</h2>
+                        <div class="price-container">
+                            <span class="show-price">RM 38</span>
+                        </div>
+                        <button class="show-btn btn">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Details List in Right Section -->
+                <div class="game-details">
+                    <div class="detail-item">
+                        <span class="detail-title">Rewards</span>
+                        <span class="detail-value">Discount (20%) <i class="fa fa-info-circle"></i></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Refund Type</span>
+                        <span class="detail-value">Refundable <i class="fa fa-question-circle"></i></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Developer</span>
+                        <span class="detail-value">Redbeet Interactive</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Publisher</span>
+                        <span class="detail-value">Axolot Games</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Release Date</span>
+                        <span class="detail-value">21 Jun, 2022</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Platform</span>
+                        <span class="detail-value">Windows</span>
+                    </div>
+                </div>
+
+                <!-- New Specifications Section -->
+                <div class="specifications">
+                    <h3>Recommended</h3>
+                    <div class="spec-item">
+                        <span class="spec-title">OS:</span>
+                        <span class="spec-value">Windows 10</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-title">Processor:</span>
+                        <span class="spec-value">Intel Core i5 / AMD Ryzen 5</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-title">Memory:</span>
+                        <span class="spec-value">8 GB</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-title">Storage:</span>
+                        <span class="spec-value">15 GB</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-title">Graphics:</span>
+                        <span class="spec-value">NVIDIA GeForce GTX 760 / AMD Radeon HD 7950</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

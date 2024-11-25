@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/img/logo.png" />
+    <script src="/carousel.js" defer></script>
+    <script src="/index.js" defer></script>
+    <link rel="stylesheet" href="/static/css/product.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <title>Checkout | Marketplace Game</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="nav">
+            <a href="index.html" class="logo">Marketplace Game</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#arrival">Top Sale</a></li>
+                    <li><a href="#best-collection">Best Collection</a></li>
+                    <<li><a href="library.html">Library</a></li>
+                </ul>
+                <div class="nav-icon">
+                    <a href="cart.html" class="cart-link">
+                        <span><i class="fa-solid fa-cart-shopping"></i></span>
+                        <span id="cartBadge" class="cart-badge">0</span>
+                    </a>
+                </div>
+            </nav>
+            <i class="fa-solid fa-bars burger_icon"></i>
+        </div>
+    </header>
+
+    <!-- Main Section for Checkout -->
+    <main class="checkout-section">
+        <div class="wrapper">
+            <!-- Left Section (Game Details) -->
+            <div class="left-section">
+                <h1>Black Myth: Wukong</h1>
+                <div class="game-rating">
+                    <span class="rating-star">★★★☆</span>
+                    <span>4.9</span>
+                </div>
+
+                <!-- Tab Menu -->
+                <div class="tab-menu">
+                    <a href="#" class="active">Overview</a>
+                </div>
+
+                <!-- Main Display for Selected Image or Video -->
+                <div class="media-display" id="mainDisplay">
+                    <video id="carouselVideo" controls autoplay style="display:none;"></video>
+                    <img id="carouselImage" src="/static/photo/wukong.jpg" alt="wukong">
+                </div>
+
+                <!-- Carousel for Additional Images and Video -->
+                <div class="carousel">
+                    <button class="carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                    <div class="carousel-images">
+                        <!-- Video Thumbnail for Video -->
+                        <div class="thumbnail" data-type="video" data-src="/static/video/wukong.webm">
+                            <img src="/static/photo/wukong thumbnail.jpg" alt="FC25 Thumbnail">
+                            <i class="fa fa-play play-icon"></i>
+                        </div>
+                        <!-- Image Thumbnails -->
+                        <div class="thumbnail" data-type="image" data-src="/static/photo/wukong1.jpg">
+                            <img src="/static/photo/wukong1.jpg" alt="FC25 Screenshot 1">
+                        </div>
+                        <div class="thumbnail" data-type="image" data-src="/static/photo/wukong2.jpg">
+                            <img src="/static/photo/wukong2.jpg" alt="FC25 Screenshot 2">
+                        </div>
+                        <div class="thumbnail" data-type="image" data-src="/static/photo/wukong3.jpg">
+                            <img src="/static/photo/wukong3.jpg" alt="FC25 Screenshot 3">
+                        </div>
+                        <div class="thumbnail" data-type="image" data-src="/static/photo/wukong4.jpg">
+                            <img src="/static/photo/wukong4.jpg" alt="FC25 Screenshot 4">
+                        </div>
+                    </div>
+                    <button class="carousel-next"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+
+                <!-- Product Information Section -->
+                <section class="product-info">
+                    <div>
+                         Black Myth: Wukong is an action RPG rooted in Chinese mythology. The story is based on Journey to the West,
+                         one of the Four Great Classical Novels of Chinese literature. You shall set out as the Destined One to venture
+                         into the challenges and marvels ahead, to uncover the obscured truth beneath the veil of a glorious legend from 
+                         the past.
+                    </div>
+                    <div class="d-flex gap-md my-sm">
+                        <span>
+                            <div class="text-dark-light">Genres</div>
+                            <a href="">Actions</a> <a href="">Advanture</a>
+                            <a href="">RPG</a> <a href="">Controller</a>
+                        </span>
+                        <span>
+                            <div class="text-dark-light">Features</div>
+                            <a href="">Controller Support</a>,
+                            <a href="">Single Player</a>
+                            <a href="">Online</a>
+                        </span>
+                    </div>
+                    <div class="product-heading">Black Myth: Wukong</div>
+                    <div class="product-description">
+                        Black Myth: Wukong is an epic, action-packed RPG that transports players into the heart of ancient Chinese mythology, 
+                        where legendary creatures and divine forces collide. Step into the role of Sun Wukong, the fabled Monkey King, 
+                        on a journey filled with challenges, transformations, and mystical powers. With cutting-edge visuals, intricate 
+                        combat mechanics, and deep lore, Black Myth: Wukong brings to life a world where every choice, battle, and skill 
+                        mastered shapes your path to immortality. Harness the magic of shapeshifting, form alliances with mythical beings, 
+                        and confront fearsome foes in a story of vengeance and destiny. The ancient realms await will you rise as 
+                        the true legend of the East? The journey begins now.
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Section (Purchase Details) -->
+            <div class="right-section">
+                <div class="col"> <!-- Added .col for matching JS logic -->
+                    <div class="game-info">
+                        <img src="/static/photo/wukong.jpg" alt="Game Logo" class="game-logo">
+                        <h2 class="heading-three">Black Myth: Wukong</h2> <!-- Product name -->
+                        <div class="price-container">
+                            <span class="show-price">RM 219</span> <!-- Product price -->
+                        </div>
+                        <button class="show-btn btn">Add to Cart</button> <!-- Button with class 'show-btn' -->
+                    </div>
+                </div>
+
+                <!-- Details List in Right Section -->
+                <div class="game-details">
+                    <div class="detail-item">
+                        <span class="detail-title">Rewards</span>
+                        <span class="detail-value">Discount (20%) <i class="fa fa-info-circle"></i></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Refund Type</span>
+                        <span class="detail-value">Non-Refundable <i class="fa fa-question-circle"></i></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Developer</span>
+                        <span class="detail-value">Game Science</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Publisher</span>
+                        <span class="detail-value">Game Science</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Release Date</span>
+                        <span class="detail-value">20/08/24</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-title">Platform</span>
+                        <span class="detail-value">Window</span>
+                    </div>
+                </div>
+
+                <!-- New Specifications Section -->
+                <div class="specifications">
+                    <h3>Recommended</h3>
+                    <div class="spec-item">
+                        <span class="spec-title">OS:</span>
+                        <span class="spec-value">Windows 10 64-bit</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-title">Processor:</span>
+                        <span class="spec-value">Intel Core i7-9700 / AMD Ryzen 5 5500</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-title">Memory:</span>
+                        <span class="spec-value">16 GB</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-title">Storage:</span>
+                        <span class="spec-value">120 GB</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-title">Direct X:</span>
+                        <span class="spec-value">Version 12</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-title">Graphics:</span>
+                        <span class="spec-value">NVIDIA GeForce RTX 2060 / AMD Radeon RX 5700 XT / INTEL Arc A750</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
